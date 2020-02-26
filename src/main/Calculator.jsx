@@ -41,8 +41,7 @@ export default class Calculator extends Component{
 
             const equals = operation === "="
             const currentOperation = this.state.operation //Guarda a operação feita anteriormente
-
-            const values = [...this.state.values] //Cria um clone dos valores
+            const values = this.state.values
 
             try{
 
